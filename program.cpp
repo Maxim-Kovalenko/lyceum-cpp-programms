@@ -2,20 +2,22 @@
 
 using namespace std;
 
-string comparator(int num)
+string numbercompare(int num)
 {
-    if(num/100 != num/10%10 && num/10%10 != num%10 && num/100 != num%10)
+    if (num<0 && num%2!=0)
         return "YES";
+
     return "NO";
 }
 
+
 int main()
 {
-    int n,a,b,c,d;
-    cin>>n>>a>>b>>c>>d;
-    cout << comparator(n) << '\n';
-    cout << comparator(a) << '\n';
-    cout << comparator(b) << '\n';
-    cout << comparator(c) << '\n';
-    cout << comparator(d);
+    int a, b, c, d, e;
+    cin>>a>>b>>c>>d>>e;
+    cout << numbercompare(a)<<'\n';
+    cout << numbercompare(b)<<'\n';
+    cout << numbercompare(c)<<'\n';
+    cout << numbercompare(d)<<'\n';
+    cout << numbercompare(e)<<'\n';
 }
