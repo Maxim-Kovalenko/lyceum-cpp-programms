@@ -2,20 +2,20 @@
 
 using namespace std;
 
+string comparator(int num)
+{
+    if(num/100 != num/10%10 && num/10%10 != num%10 && num/100 != num%10)
+        return "YES";
+    return "NO";
+}
+
 int main()
 {
-    int a;
-    cin>>a;
-    if (a%2 == 0 && a>0)
-    {
-      cout<<"YES"<<"\n"<<a + 2;
-    }
-    else
-    {
-      if (a<0)
-        cout<<"NO"<<"\n"<<2;
-      else
-        cout<<"NO"<<"\n"<<a+1;
-    }
-    return 0;
+    int n,a,b,c,d;
+    cin>>n>>a>>b>>c>>d;
+    cout << comparator(n) << '\n';
+    cout << comparator(a) << '\n';
+    cout << comparator(b) << '\n';
+    cout << comparator(c) << '\n';
+    cout << comparator(d);
 }
