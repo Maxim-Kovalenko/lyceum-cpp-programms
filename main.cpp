@@ -2,8 +2,14 @@
 
 using namespace std;
 
+
+
 int main()
 {
-    cout<<"Hello world";
-    return 0;
+    int a, b, nMax, nMin;
+    cin>>a>>b;
+    nMax = max(a,b);
+    nMin = min(a,b);
+    cout<<nMax*nMax<<'\n'<<nMin*nMin;
 }
+
