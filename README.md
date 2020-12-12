@@ -1,2 +1,2 @@
 # lyceum-cpp-programms
-My Lyceum C++ code for contests
+Our Lyceum C++ code for contests
