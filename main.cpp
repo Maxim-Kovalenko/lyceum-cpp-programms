@@ -4,23 +4,28 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    int a, b, c;
+    cin>>a>>b>>c;
+    cout << compare(a, b, c);
     return 0;
 }
 
-string compare(a, b, c)
+string compare(int a, int b, int c)
 {
-    int num1, num2, num3, num4;
+    int num1, num2, num3, num4, num5;
     if(a>b)
     {
         num1 = max(a, c)
         num2 = min(a, c)
         num3 = max(num1, b)
-        num4 = min()
+        num4 = min(num1, b)
+        num5 = min(num2, num4)
     }
-    else
-    {
-        num1 = max(b, c)
-        num2 = max(num1, a)
-    }
+    //else
+    //{
+      //  if(a<b)
+        //{
+
+        //}
+    //}
 }
