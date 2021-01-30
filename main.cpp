@@ -2,30 +2,16 @@
 
 using namespace std;
 
+void compare(int a, int b, int c)
+{
+    int num1 = max(max(a, b), c);
+    int num2 = min(min(a, b), c);
+    cout<<num1*num1<<'\n'<<num2*num2;
+}
 int main()
 {
-    int a, b, c;
-    cin>>a>>b>>c;
-    cout << compare(a, b, c);
-    return 0;
+    int num1, num2, num3;
+    cin>>num1>>num2>>num3;
+    compare(num1, num2, num3);
 }
 
-string compare(int a, int b, int c)
-{
-    int num1, num2, num3, num4, num5;
-    if(a>b)
-    {
-        num1 = max(a, c)
-        num2 = min(a, c)
-        num3 = max(num1, b)
-        num4 = min(num1, b)
-        num5 = min(num2, num4)
-    }
-    //else
-    //{
-      //  if(a<b)
-        //{
-
-        //}
-    //}
-}
