@@ -1,17 +1,27 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-void compare(int a, int b, int c)
+void compare(double a)
 {
-    int num1 = max(max(a, b), c);
-    int num2 = min(min(a, b), c);
-    cout<<num1*num1<<'\n'<<num2*num2;
-}
-int main()
-{
-    int num1, num2, num3;
-    cin>>num1>>num2>>num3;
-    compare(num1, num2, num3);
+    if(a == round(a))
+    {
+        int b = a;
+        int num1 = b / 10000;
+        int num2 = a/
+        int output;
+        cout<<output;
+    }
+    else
+    {
+        double output = sqrt(a);
+        cout<<output;
+    }
 }
 
+int main()
+{
+    double input_num;
+    cin>>input_num;
+    compare(input_num);
+}
